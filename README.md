@@ -28,7 +28,7 @@ MySql 8.0
 2. Откройте терминал и выполните команду:
 
    ```bash
-   git clone https://github.com/ваш_логин/ваш_репозиторий.git
+   git clone https://github.com/Yan-Bolmelcer/offer_app.git
    cd ваш_репозиторий
    ```
 
