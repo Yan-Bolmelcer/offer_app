@@ -115,10 +115,9 @@ $script = <<<JS
 $(document).ready(function() {
     var deleteUrl;
 
-    // Устанавливаем URL для удаления, когда пользователь нажимает на кнопку удаления
     $('.btn-delete').on('click', function() {
-        deleteUrl = $(this).data('url'); // Получаем URL из атрибута data-url
-        $('#deleteModal').modal('show'); // Показываем модальное окно
+        deleteUrl = $(this).data('url');
+        $('#deleteModal').modal('show');
     });
 
     // Обработчик для кнопки подтверждения удаления
@@ -139,7 +138,6 @@ $(document).ready(function() {
         });
     });
 
-    // Закрываем модальное окно при нажатии на кнопку "Отмена" или вне модального окна
     $('.btn-secondary, .close').on('click', function () {
         $('#deleteModal').modal('hide');
         deleteUrl = undefined; // Сбрасываем URL удаления
